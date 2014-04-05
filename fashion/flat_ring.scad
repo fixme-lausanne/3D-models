@@ -5,11 +5,13 @@
 
 difference() {
     union() {
-        for(tetha = [0:1:360]){
-            rotate([1, 0, tetha]){
-                translate([8.7, 0, 2 * sin(10 * tetha)])
-                rotate([90, 0, 0]) {
-                    cylinder(h = 0.5, r = 0.5, center = true, $fn = 100);
+        hull() {
+            for(tetha = [0:15:360]){
+                rotate([1, 0, tetha]){
+                    translate([8.7, 0, 2 * sin(10 * tetha)])
+                    rotate([90, 0, 0]) {
+                        cylinder(h = 0.5, r = 0.5, center = true, $fn = 100);
+                    }
                 }
             }
         }
