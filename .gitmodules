@@ -1,0 +1,3 @@
+[submodule "hackerspace-related/pricing-table"]
+	path = hackerspace-related/pricing-table
+	url = https://github.com/diadzine/openscad-fixme-price-list
